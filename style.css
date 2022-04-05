@@ -1,0 +1,86 @@
+﻿nav {
+          margin-top: 20px;
+          margin-left: 200px;
+          margin-right: 200px;
+          background-color: #82097ee6;
+          text-align: center;
+        
+      }
+      
+      /* убираем отступы и поля, а также list-style для "ul", 
+       * и добавляем "position:relative" */
+      nav ul {
+          padding:0;
+          margin:0px;
+          list-style: none;
+          position: relative;
+          }
+      
+      /* применяем inline-block позиционирование к элементам навигации */
+      nav ul li {
+          margin: 0 50px 0 0;
+          display:inline-block;
+          background-color: #82097ee6;
+          }
+      
+      /* стилизуем ссылки */
+      nav a {
+          display:block;
+          padding:0 10px;
+          color:#FFF;
+          font-size:20px;
+          line-height: 60px;
+          text-decoration:none;
+      }
+      
+      /* изменяем цвет фона при наведении курсора */
+      nav a:hover {
+          background-color: #5b16c9;
+
+}
+nav ul ul {
+          display: none;
+          position: absolute;
+          top: 100%;
+      }
+      
+      /* отображаем выпадающий список при наведении */
+      nav ul li:hover > ul {
+          display:inherit;
+      }
+      
+      /* первый уровень выпадающего списка */
+      nav ul ul li {
+          min-width:170px;
+          float:none;
+          display:list-item;
+          position: relative;
+      }
+#container{
+width:1300px;
+height:1000px;
+background:#E0FFFF;
+}
+#logo{
+width:900px;
+height:200px;
+background-image:url(logo.jpg);
+margin-left:200px;
+}
+
+#content{
+width:900px;
+height:550px;
+margin-left:200px;
+
+}
+#footer{
+width:900px;
+height:50px;
+background:#808080;
+margin-left:200px;
+
+}
+
+
+	
